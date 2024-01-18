@@ -1,6 +1,15 @@
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import Login from './components/login'
+import Register from './components/register'
 const App = () => {
   return(
-    <div className="font-mono italic">App</div>
+    <BrowserRouter>
+      <Routes>
+        <Route path = '/' element = {<Login/>} />
+        <Route path = '/register' element = {<Register/>} />
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
 
