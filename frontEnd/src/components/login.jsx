@@ -17,7 +17,7 @@ const Login = () => {
                         className="w-full rounded-md p-2 focus:outline-none focus:ring focus:border-blue-300"
                         />
                     </div> 
-                    <button className="text-white rounded-md w-[50%] mx-[25%] bg-blue-400 hover:bg-blue-500 p-2">Submit</button>
+                    <button className="text-white rounded-md w-[40%] mx-[45%] bg-blue-400 hover:bg-blue-500 p-2">Login</button>
                 </form>
                 <div className="flex gap-5 mt-5">
                     <p className="text-gray-600 italic">Not registered?</p><Link to='/register' className="text-gray-600 hover:text-blue-500 hover:underline">click here!</Link>

@@ -33,7 +33,7 @@ const Register = () => {
                         className="w-full ml-2.5 rounded-md p-2 focus:outline-none focus:ring focus:border-blue-300" 
                         />
                     </div>
-                    <button className="text-white rounded-md w-[50%] mx-[35%] bg-blue-400 hover:bg-blue-500 p-2">Submit</button>
+                    <button className="text-white rounded-md w-[50%] mx-[35%] bg-blue-400 hover:bg-blue-500 p-2">Register</button>
                 </form>
                 <div className="flex gap-5 mt-5">
                     <p className="text-gray-600 italic space-x-0">Already registered?</p><Link to='/' className="text-gray-600 hover:text-blue-500 hover:underline">Login here!</Link>
