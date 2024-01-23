@@ -13,9 +13,9 @@ const createUser = createAsyncThunk('user/createUser', async (user)=> {
         }
 
 })
-
+console.log(backendUrl);
 const login = createAsyncThunk('user/login', async (user)=> {
-        
+        console.log(backendUrl);
         const url = `${backendUrl}/api/v1/auth/login`        
         try {
             const response = await axios.post(url, user)    
