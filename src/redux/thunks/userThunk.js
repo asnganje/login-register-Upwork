@@ -21,7 +21,7 @@ const login = createAsyncThunk('user/login', async (user)=> {
             const response = await axios.post(url, user)    
             return response.data
         } catch (error) {
-            throw new Error(`Error logging in because of ${error}`)            
+            throw new Error(`Error logging us in because of ${error}`)            
         }
 })
 
