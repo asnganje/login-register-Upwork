@@ -55,7 +55,10 @@ const Login = () => {
                     <p className="text-gray-600 italic">Not registered?</p><Link to='/register' className="text-gray-600 hover:text-blue-500 hover:underline">click here!</Link>
                 </div>
             </div>): 
-                (<p className="font-mono" >Welcome {logged[0].msg.firstName}</p>)
+                (<div>
+                    <p className="font-mono" >Welcome {logged[0].msg.firstName}</p>
+                    <p><Link to='/login'>Back to Login</Link></p>
+                </div>)
             }
         </div>
     )

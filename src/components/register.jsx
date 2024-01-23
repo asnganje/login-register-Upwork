@@ -83,7 +83,12 @@ const Register = () => {
                     <p className="text-gray-600 italic space-x-0">Already registered?</p><Link to='/' className="text-gray-600 hover:text-blue-500 hover:underline">Login here!</Link>
                 </div>
             </div>):
-            (<p className="font-mono">Successful registration of {data[0].msg.firstName}</p>)
+            (
+            <div className="flex flex-col justify-center items-center">
+                <p className="font-mono">Successful registration of {data[0].msg.firstName}</p>
+                <p><Link to='/login'>Go to Login!</Link></p>
+            </div>
+            )
             }
             </div>
     )
