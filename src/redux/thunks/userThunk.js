@@ -1,9 +1,7 @@
-VITE_REACT_APP_BACKEND_URL = https://loginbackend-m081.onrender.com
-
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios'
 
-const backendUrl = import.meta.env.VITE_REACT_APP_BACKEND_URL;
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL;
 
 const createUser = createAsyncThunk('user/createUser', async (user)=> {
         const url = `${backendUrl}/api/v1/auth/register`
@@ -15,9 +13,7 @@ const createUser = createAsyncThunk('user/createUser', async (user)=> {
         }
 
 })
-console.log(backendUrl);
 const login = createAsyncThunk('user/login', async (user)=> {
-        console.log(backendUrl);
         const url = `${backendUrl}/api/v1/auth/login`        
         try {
             const response = await axios.post(url, user)    
