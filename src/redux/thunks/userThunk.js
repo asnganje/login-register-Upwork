@@ -1,3 +1,5 @@
+VITE_REACT_APP_BACKEND_URL = https://loginbackend-m081.onrender.com
+
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios'
 
