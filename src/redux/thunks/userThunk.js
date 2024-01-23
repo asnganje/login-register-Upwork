@@ -1,9 +1,9 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios'
 
-
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'https://loginbackend-wyuv.onrender.com';
 const createUser = createAsyncThunk('user/createUser', async (user)=> {
-        const url = "http://localhost:3002/api/v1/auth/register"
+        const url = `${backendUrl}/api/v1/auth/register`
         try {
             const response = await axios.post(url, user)
             return response.data           
@@ -15,7 +15,7 @@ const createUser = createAsyncThunk('user/createUser', async (user)=> {
 
 const login = createAsyncThunk('user/login', async (user)=> {
         
-        const url = "http://localhost:3002/api/v1/auth/login"        
+        const url = `${backendUrl}/api/v1/auth/login`        
         try {
             const response = await axios.post(url, user)    
             return response.data
