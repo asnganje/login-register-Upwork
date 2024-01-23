@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios'
 
-const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'http://localhost:3002';
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'http://localhost:3000';
 const createUser = createAsyncThunk('user/createUser', async (user)=> {
         const url = `${backendUrl}/api/v1/auth/register`
         try {

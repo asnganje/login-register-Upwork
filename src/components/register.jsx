@@ -86,7 +86,7 @@ const Register = () => {
             (
             <div className="flex flex-col justify-center items-center">
                 <p className="font-mono">Successful registration of {data[0].msg.firstName}</p>
-                <p><Link to='/login'>Go to Login!</Link></p>
+                <p><Link to='/'>Go to Login!</Link></p>
             </div>
             )
             }

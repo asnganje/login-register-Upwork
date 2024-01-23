@@ -57,7 +57,7 @@ const Login = () => {
             </div>): 
                 (<div>
                     <p className="font-mono" >Welcome {logged[0].msg.firstName}</p>
-                    <p><Link to='/login'>Back to Login</Link></p>
+                    <p><Link to='/register'>Go to register</Link></p>
                 </div>)
             }
         </div>
